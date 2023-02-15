@@ -13,17 +13,31 @@ namespace LinqSample006
             //開始用 var 了
             var list = CreateList();
             //這裡的 person1 是單個物件， 也就是 MyData person1
+            
+            var person = list.FirstOrDefault((x) => x.Name == "貓咪");
+            // 判斷回傳結果是否為 null
+            if(person == null)
+            {
+                //如果是 null 則另行處理
+                    Console.WriteLine("查無此人");
+            }
+            else
+            {
+                Console.WriteLine($"找到 : {person.Name} - {person.Age}");
+            }
+
             var person1 = list.SingleOrDefault((x) => x.Name == "Tom");
             Console.WriteLine($"找到唯一的 : {person1.Name} - {person1.Age}");
 
             //因為找不到， 就會跳出例外
+            //建議第一道手段不要用try-catch
             try
             {
                 var person2 = list.Single((x) => x.Name == "Bill");
                 Console.WriteLine($"找到唯一的 : {person2.Name} - {person2.Age}");
 
             }
-            catch (Exception ex) { Console.WriteLine("沒有Bill"); }
+            catch (Exception ex) { Console.WriteLine("沒有Bill或重複?"); }
 
             Console.ReadLine();
         }
