@@ -28,7 +28,6 @@ namespace LinqSample006
 
             var person1 = list.SingleOrDefault((x) => x.Name == "Tom");
             Console.WriteLine($"找到唯一的 : {person1.Name} - {person1.Age}");
-
             //因為找不到， 就會跳出例外
             //建議第一道手段不要用try-catch
             try
@@ -38,7 +37,7 @@ namespace LinqSample006
 
             }
             catch (Exception ex) { Console.WriteLine("沒有Bill或重複?"); }
-
+            Console.WriteLine("test");
             Console.ReadLine();
         }
         static List<MyData> CreateList()
