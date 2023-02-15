@@ -37,7 +37,7 @@ namespace LinqSample006
 
             }
             catch (Exception ex) { Console.WriteLine("沒有Bill或重複?"); }
-            Console.WriteLine("test");
+       
             Console.ReadLine();
         }
         static List<MyData> CreateList()
