@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqSample005", "LinqSample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqSample006", "LinqSample006\LinqSample006.csproj", "{00535499-31D9-4AC0-AD04-63EDAD698398}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqSample008", "LinqSample008\LinqSample008.csproj", "{0CBF10BE-9E06-4A9C-898B-5EA039187E1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{00535499-31D9-4AC0-AD04-63EDAD698398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00535499-31D9-4AC0-AD04-63EDAD698398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00535499-31D9-4AC0-AD04-63EDAD698398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBF10BE-9E06-4A9C-898B-5EA039187E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBF10BE-9E06-4A9C-898B-5EA039187E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBF10BE-9E06-4A9C-898B-5EA039187E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBF10BE-9E06-4A9C-898B-5EA039187E1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
