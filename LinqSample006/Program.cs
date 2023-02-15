@@ -10,6 +10,7 @@ namespace LinqSample006
     {
         static void Main(string[] args)
         {
+            int index = 1;
             //開始用 var 了
             var list = CreateList();
             //這裡的 person1 是單個物件， 也就是 MyData person1
@@ -37,7 +38,17 @@ namespace LinqSample006
 
             }
             catch (Exception ex) { Console.WriteLine("沒有Bill或重複?"); }
-       
+            //person3 ElementAtOrDefault
+            var person3 = list.ElementAtOrDefault(index);
+            if (person3 == null)
+            {
+                Console.WriteLine("查無此人");
+            }
+            else
+            {
+                Console.WriteLine($"找到索引為 : {index} 的人是 {person3.Name} - { person3.Age}");
+            }
+
             Console.ReadLine();
         }
         static List<MyData> CreateList()
